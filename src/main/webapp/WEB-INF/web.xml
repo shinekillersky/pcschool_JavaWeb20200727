@@ -5,29 +5,24 @@
             30
         </session-timeout>
     </session-config>
+    
     <servlet>
         <servlet-name>hello</servlet-name>
         <servlet-class>com.web.servlet.HelloServlet</servlet-class>
     </servlet>
-    
     <servlet>
         <description>BMI calc...</description>
         <servlet-name>BMIServlet</servlet-name>
-        <servlet-class>com.web.servlet.BMIServelet</servlet-class>
+        <servlet-class>com.web.servlet.BMIServlet</servlet-class>
     </servlet>
     
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
         <url-pattern>/servlet/hello</url-pattern>
     </servlet-mapping>
-    
-    <servlet-mapping>
-        <servlet-name>hello</servlet-name>
-        <url-pattern>/aaa/bbb</url-pattern>
-    </servlet-mapping>
-    
     <servlet-mapping>
         <servlet-name>BMIServlet</servlet-name>
         <url-pattern>/servlet/bmi</url-pattern>
     </servlet-mapping>
+    
 </web-app>
